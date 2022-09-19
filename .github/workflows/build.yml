@@ -2,9 +2,9 @@ name: Build Pages
 
 on:
   push:
-    branches: ["development" ]
+    branches: ["main", "development" ]
   pull_request:
-    branches: ["development" ]
+    branches: ["main", "development" ]
 
 jobs:
   build:
@@ -20,11 +20,6 @@ jobs:
         command: install
 
     - name: Build docs
-      uses: VaultVulp/action-pipenv@v2.0.1
-      with:
-        command: run build
-
-    - name: Commit documentation changes
       run: make html
 
     - name: Commit documentation changes
