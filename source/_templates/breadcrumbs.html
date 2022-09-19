@@ -1,0 +1,24 @@
+{%- extends "sphinx_rtd_theme/breadcrumbs.html" %}
+
+{% block breadcrumbs_aside %}
+{% if not meta or meta.get('github_url') != 'hide' %}
+{{ super() }}
+
+<style>
+	.edit-guidelines {
+		font-size: 14px;
+		float: right;
+		clear: both;
+	}
+
+	@media screen and (max-width: 480px) {
+		.edit-guidelines {
+			display: none;
+		}
+	}
+</style>
+<a class="edit-guidelines" href="{{ contributing_guidelines_url }}">
+	Check out how to contribute!
+</a>
+{% endif %}
+{% endblock %}
