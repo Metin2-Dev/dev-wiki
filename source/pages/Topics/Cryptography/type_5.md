@@ -9,7 +9,7 @@ Strength {octicon}`key;1em;sd-text-info` :
 {bdg-info-line}`Recommended`
 
 History {octicon}`book;1em;sd-text-info`:
-[Hybrid Encryption][history:hybrid-crypt]
+[Hybrid Encryption][history:type_5]
 |
 RFC Standard {octicon}`comment;1em;sd-text-info`:
 {bdg-secondary-line}`Unexistent`
