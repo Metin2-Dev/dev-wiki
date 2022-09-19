@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPE &mdash; Metin2Dev Wiki</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/design-tabs.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html">
+            <img src="https://raw.githubusercontent.com/Metin2-Dev/Assets/main/128_round_black.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Topics/index.html">Topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Topics/Cryptography/index.html">Cryptography</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Topics/Cryptography/index.html#algorythm-types">Algorythm Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_0.html">Raw (Type 0)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_1.html">-LZO (Type 1)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_2.html">~XTEA(-LZO) (Type 2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_3.html">Panama (Type 3)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_4.html">HybridCrypt (Type 4)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_5.html">HybridCrypt+ (Type 5)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_6.html">~XTEA(-Snappy) (Type 6)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Topics/Formats/index.html">Formats</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Topics/Networking/index.html">Networking</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Incomplete Topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Formats/index.html">Formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Formats/texture_caching.html">DDS Texture Caching</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Formats/texture_caching.html#usage">Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Formats/texture_caching.html#rdch-format">RDCH Format</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../About/Contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../About/Changelogs/index.html">Changelogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../About/Maintenance/index.html">Maintenance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../About/Maintenance/workflow.html">Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../About/Maintenance/workflow.html#o-development-flow">1º - Development flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../About/Maintenance/workflow.html#o-beta-flow">2º - Beta flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../About/Maintenance/workflow.html#o-stable-release-flow">3º - Stable release flow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>IPE</li>
+
+
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/Metin2-Dev/Wiki/blob/main/pages/Incomplete/Networking/Encryption/IPE.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+
+<style>
+	.edit-guidelines {
+		font-size: 14px;
+		float: right;
+		clear: both;
+	}
+
+	@media screen and (max-width: 480px) {
+		.edit-guidelines {
+			display: none;
+		}
+	}
+</style>
+<a class="edit-guidelines" href="">
+	Check out how to contribute!
+</a>
+
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="ipe">
+<h1>IPE<a class="headerlink" href="#ipe" title="Permalink to this headline">¶</a></h1>
+<p>Diffie-Hellman key exchange</p>
+<p>The improved packet encryption is performed by choosing a suitable cipher
+based from the shared secret that is exchanged with Diffie-Hellman.</p>
+<div class="section" id="unified-diffie-hellman-key-exchange">
+<h2>Unified Diffie-Hellman key exchange<a class="headerlink" href="#unified-diffie-hellman-key-exchange" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Initialize RFC 5114’s 1024-bit MODP standarized parameters (p, g, q)</p></li>
+<li><p>Randomly generate a Static and Ephemeral public and private keys with Unified Diffie-Hellman.</p></li>
+<li><p>Pass the shared secret length and public keys to the network and perform an agreement with the received public keys and shared secret length.</p></li>
+</ul>
+<div class="section" id="cipher-selection">
+<h3>Cipher selection<a class="headerlink" href="#cipher-selection" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="a">
+<h4>A<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h4>
+<p>Takes the remained of the first byte in the shared secret block with the shared
+secret size. This number will determine where the first cipher number that is
+stored in the shared secret block.</p>
+</div>
+<div class="section" id="b">
+<h4>B<a class="headerlink" href="#b" title="Permalink to this headline">¶</a></h4>
+<p>Takes the remained of the second byte in the shared secret block with the shared
+secret size. This number will determine where the second cipher number that
+is stored in the shared secret block.</p>
+</div>
+<div class="section" id="c">
+<h4>C<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h4>
+<p>Takes the remained of this two bytes generated from the secret block with the max algorithms supported and pick an algorithm.</p>
+</div>
+<div class="section" id="d">
+<h4>D<a class="headerlink" href="#d" title="Permalink to this headline">¶</a></h4>
+<p>The shared secret block contain the algorithm’s keys and a block data
+(a random block is being used because some algorithms do not support IV),
+that will be used to crypt the packets.</p>
+</div>
+<div class="section" id="e">
+<h4>E<a class="headerlink" href="#e" title="Permalink to this headline">¶</a></h4>
+<p>The selected cipher will be processed with CTR Mode and the generated IV</p>
+</div>
+<div class="section" id="f">
+<h4>F<a class="headerlink" href="#f" title="Permalink to this headline">¶</a></h4>
+<p>If the keys are generated by the server, the first cipher will be the
+encryption cipher. the second will be the decryption cipher.
+The keys are inverted in client side.</p>
+<p>(The lengths are the default lengths assigned to the algorithm)</p>
+<div class="section" id="appendix">
+<h5>Appendix<a class="headerlink" href="#appendix" title="Permalink to this headline">¶</a></h5>
+<p>Secret block content:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Start</span> <span class="n">of</span> <span class="n">shared</span> <span class="n">data</span>
+<span class="n">first</span> <span class="n">key</span>
+<span class="n">second</span> <span class="n">key</span>
+<span class="n">non</span> <span class="n">important</span> <span class="n">data</span>
+<span class="n">second</span> <span class="n">IV</span>
+<span class="n">first</span> <span class="n">IV</span>
+<span class="n">End</span> <span class="n">of</span> <span class="n">shared</span> <span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="known-algorithms">
+<h5>Known Algorithms<a class="headerlink" href="#known-algorithms" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li><p>RC6</p></li>
+<li><p>MARS</p></li>
+<li><p>Twofish</p></li>
+<li><p>Serpent</p></li>
+<li><p>CAST256</p></li>
+<li><p>IDEA</p></li>
+<li><p>DES-EDE2 (Triple DES)</p></li>
+<li><p>Camellia</p></li>
+<li><p>SEED</p></li>
+<li><p>RC5</p></li>
+<li><p>Blowfish</p></li>
+<li><p>TEA</p></li>
+<li><p>SHACAL2</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019-2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

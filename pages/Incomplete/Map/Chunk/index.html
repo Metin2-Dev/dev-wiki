@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chunk &mdash; Metin2Dev Wiki</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/design-tabs.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html">
+            <img src="https://raw.githubusercontent.com/Metin2-Dev/Assets/main/128_round_black.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Topics/index.html">Topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Topics/Cryptography/index.html">Cryptography</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Topics/Cryptography/index.html#algorythm-types">Algorythm Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_0.html">Raw (Type 0)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_1.html">-LZO (Type 1)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_2.html">~XTEA(-LZO) (Type 2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_3.html">Panama (Type 3)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_4.html">HybridCrypt (Type 4)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_5.html">HybridCrypt+ (Type 5)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../Topics/Cryptography/type_6.html">~XTEA(-Snappy) (Type 6)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Topics/Formats/index.html">Formats</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Topics/Networking/index.html">Networking</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Incomplete Topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Formats/index.html">Formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Formats/texture_caching.html">DDS Texture Caching</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Formats/texture_caching.html#usage">Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Formats/texture_caching.html#rdch-format">RDCH Format</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../About/Contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../About/Changelogs/index.html">Changelogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../About/Maintenance/index.html">Maintenance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../About/Maintenance/workflow.html">Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../About/Maintenance/workflow.html#o-development-flow">1º - Development flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../About/Maintenance/workflow.html#o-beta-flow">2º - Beta flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../About/Maintenance/workflow.html#o-stable-release-flow">3º - Stable release flow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Chunk</li>
+
+
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/Metin2-Dev/Wiki/blob/main/pages/Incomplete/Map/Chunk/index.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+
+<style>
+	.edit-guidelines {
+		font-size: 14px;
+		float: right;
+		clear: both;
+	}
+
+	@media screen and (max-width: 480px) {
+		.edit-guidelines {
+			display: none;
+		}
+	}
+</style>
+<a class="edit-guidelines" href="">
+	Check out how to contribute!
+</a>
+
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="chunk">
+<h1>Chunk<a class="headerlink" href="#chunk" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound" id="toc-metin2-map-chunk-formats">
+<p class="caption" role="heading"><span class="caption-text">Formats</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Attributes.html">Attributes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Water.html">Water</a></li>
+</ul>
+</div>
+<div class="section" id="directory-composition">
+<h2>Directory Composition<a class="headerlink" href="#directory-composition" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="files">
+<h3>Files<a class="headerlink" href="#files" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>AreaData.txt</p></li>
+<li><p>AreaProperty.txt</p></li>
+<li><p>AreaAmbienceData.txt</p></li>
+<li><p>attr.atr</p></li>
+<li><p>water.wtr</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019-2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
