@@ -14,15 +14,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install dependencies
-      uses: VaultVulp/action-pipenv@v2.0.1
-      with:
-        command: install
+    - name: Install Poetry
+      uses: abatilo/actions-poetry@v2
 
     - name: Build docs
-      uses: VaultVulp/action-pipenv@v2.0.1
-      with:
-        command: run build
+      run: |
+        poetry shell
+        poe build-docs
 
     - name: Commit documentation changes
       run: |
