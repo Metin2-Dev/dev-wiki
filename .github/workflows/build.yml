@@ -19,7 +19,7 @@ jobs:
 
     - name: Build docs
       run: |
-        poetry shell
+        poetry install
         poe build-docs
 
     - name: Commit documentation changes
