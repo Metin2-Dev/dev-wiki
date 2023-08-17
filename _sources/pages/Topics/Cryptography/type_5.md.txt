@@ -2,7 +2,7 @@
 [history:type_5]: https://history.metin2.dev/topics/cryptography/type_5
 
 
-# HybridCrypt+ (Type 5)
+# HybridCrypt SDB (Type 5)
 
 Strength {octicon}`key;1em;sd-text-info` :
 {bdg-warning}`Medium`

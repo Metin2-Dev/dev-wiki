@@ -62,15 +62,15 @@ from the Index information specified above
 
 #### Algorithm Types
 
-| Type | Name                                                            | Description                                                                                                   |
-|------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| 0    | Raw                                                             | No compression or encryption                                                                                  |
-| 1    | LZO                                                             | Compressed with LZO                                                                                           |
-| 2    | LZO+XTEA                                                        | Compressed with LZO then encrypted with XTEA                                                                  | 
-| 3    | Panama                                                          | Encrypted with Panama                                                                                         |
-| 4    | [HybridCrypt](../../../Topics/Cryptography/type_4.md)       | HybridCrypt                                                                                                   |
+| Type | Name                                                   | Description                                                                                                   |
+|------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| 0    | Encrypted Object                                       | No compression or encryption                                                                                  |
+| 1    | Encrypted Object                                       | Compressed with LZO                                                                                           |
+| 2    | Encrypted Object                                       | Compressed with LZO then encrypted with XTEA                                                                  | 
+| 3    | Panama                                                 | Encrypted with Panama                                                                                         |
+| 4    | [HybridCrypt](../../../Topics/Cryptography/type_4.md)  | HybridCrypt                                                                                                   |
 | 5    | [HybridCrypt+](../../../Topics/Cryptography/type_5.md) | HybridCrypt with extra data                                                                                   |
-| 6    | Snappy+XTEA                                                     | Compressed with Snappy then encrypted with XTEA using the Content keys (In other words, a MCSP CryptedObject) |
+| 6    | Encrypted Object                                       | Compressed with Snappy then encrypted with XTEA using the Content keys (In other words, a MCSP CryptedObject) |
 
 
 ## Deployment

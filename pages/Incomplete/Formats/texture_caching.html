@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DDS Texture Caching &mdash; Metin2Dev Wiki</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/design-tabs.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -29,12 +29,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html">
-            <img src="https://raw.githubusercontent.com/Metin2-Dev/Assets/main/128_round_black.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="https://raw.githubusercontent.com/Metin2-Dev/Assets/main/128_round_black.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -50,7 +54,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Topics/Cryptography/type_2.html">~XTEA(-LZO) (Type 2)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Topics/Cryptography/type_3.html">Panama (Type 3)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Topics/Cryptography/type_4.html">HybridCrypt (Type 4)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../Topics/Cryptography/type_5.html">HybridCrypt+ (Type 5)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Topics/Cryptography/type_5.html">HybridCrypt SDB (Type 5)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Topics/Cryptography/type_6.html">~XTEA(-Snappy) (Type 6)</a></li>
 </ul>
 </li>
@@ -104,10 +108,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Incomplete Topics</a> &raquo;</li>
-          <li><a href="index.html">Formats</a> &raquo;</li>
-      <li>DDS Texture Caching</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Incomplete Topics</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Formats</a></li>
+      <li class="breadcrumb-item active">DDS Texture Caching</li>
 
 
       <li class="wy-breadcrumbs-aside">
@@ -139,8 +143,8 @@
            <div itemprop="articleBody">
              
   <!-- LINKS -->
-<div class="section" id="dds-texture-caching">
-<h1>DDS Texture Caching<a class="headerlink" href="#dds-texture-caching" title="Permalink to this headline">¶</a></h1>
+<section id="dds-texture-caching">
+<h1>DDS Texture Caching<a class="headerlink" href="#dds-texture-caching" title="Permalink to this heading">¶</a></h1>
 <p>Usability <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-hash sd-text-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M6.368 1.01a.75.75 0 01.623.859L6.57 4.5h3.98l.46-2.868a.75.75 0 011.48.237L12.07 4.5h2.18a.75.75 0 010 1.5h-2.42l-.64 4h2.56a.75.75 0 010 1.5h-2.8l-.46 2.869a.75.75 0 01-1.48-.237l.42-2.632H5.45l-.46 2.869a.75.75 0 01-1.48-.237l.42-2.632H1.75a.75.75 0 010-1.5h2.42l.64-4H2.25a.75.75 0 010-1.5h2.8l.46-2.868a.75.75 0 01.858-.622zM9.67 10l.64-4H6.33l-.64 4h3.98z"></path></svg> :
 <span class="sd-sphinx-override sd-badge sd-outline-warning sd-text-warning">Pointless</span> <span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Not recommended</span></p>
 <p>History <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-book sd-text-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path></svg>:
@@ -153,21 +157,21 @@ RFC Standard <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon s
 Metin2 auto-patcher to reduce download time of big texture files.</p>
 <p>The auto-patcher would download RDCH files and after being
 downloaded, it would read the file and generate
-a new <a class="reference internal" href="Pack/eter.html"><span class="doc std std-doc">EterPack</span></a> file
+a new <a class="reference internal" href="Pack/eter.html"><span class="std std-doc">EterPack</span></a> file
 named with the RCDH filename followed by <code class="docutils literal notranslate"><span class="pre">_texcache</span></code>, to signalize that
 this texture cache was generated by the patcher.</p>
-<div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
 <p>Its introduction date is unknown however its estimated that
 the format was used in the Korean auto-patcher around 2013,
 and then dropped later at an unknown date
 (this is a rough estimation that is not precisely confirmed)</p>
-</div>
-<div class="section" id="rdch-format">
-<h2>RDCH Format<a class="headerlink" href="#rdch-format" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="header">
-<h3>Header<a class="headerlink" href="#header" title="Permalink to this headline">¶</a></h3>
-<table class="colwidths-auto docutils align-default">
+</section>
+<section id="rdch-format">
+<h2>RDCH Format<a class="headerlink" href="#rdch-format" title="Permalink to this heading">¶</a></h2>
+<section id="header">
+<h3>Header<a class="headerlink" href="#header" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Bytes</p></th>
 <th class="head"><p>Description</p></th>
@@ -179,10 +183,10 @@ and then dropped later at an unknown date
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="dds-texture">
-<h3>DDS texture<a class="headerlink" href="#dds-texture" title="Permalink to this headline">¶</a></h3>
-<table class="colwidths-auto docutils align-default">
+</section>
+<section id="dds-texture">
+<h3>DDS texture<a class="headerlink" href="#dds-texture" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Bytes</p></th>
 <th class="head"><p>Description</p></th>
@@ -208,9 +212,9 @@ and then dropped later at an unknown date
 <p>Next 4 bytes: Mipmap count</p>
 <p>Then it follows the name of the file without a null terminator.</p>
 <p>Last, the DDS texture for each mipmap compressed.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -223,7 +227,7 @@ and then dropped later at an unknown date
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2019-2022.</p>
+    <p>&#169; Copyright 2019-2023.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

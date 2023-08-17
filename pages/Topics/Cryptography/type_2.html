@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>~XTEA(-LZO) (Type 2) &mdash; Metin2Dev Wiki</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/design-tabs.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -29,12 +29,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html">
-            <img src="https://raw.githubusercontent.com/Metin2-Dev/Assets/main/128_round_black.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="https://raw.githubusercontent.com/Metin2-Dev/Assets/main/128_round_black.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -50,7 +54,7 @@
 <li class="toctree-l4 current"><a class="current reference internal" href="#">~XTEA(-LZO) (Type 2)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="type_3.html">Panama (Type 3)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="type_4.html">HybridCrypt (Type 4)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="type_5.html">HybridCrypt+ (Type 5)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="type_5.html">HybridCrypt SDB (Type 5)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="type_6.html">~XTEA(-Snappy) (Type 6)</a></li>
 </ul>
 </li>
@@ -104,10 +108,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Topics</a> &raquo;</li>
-          <li><a href="index.html">Cryptography</a> &raquo;</li>
-      <li>~XTEA(-LZO) (Type 2)</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Topics</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Cryptography</a></li>
+      <li class="breadcrumb-item active">~XTEA(-LZO) (Type 2)</li>
 
 
       <li class="wy-breadcrumbs-aside">
@@ -139,8 +143,8 @@
            <div itemprop="articleBody">
              
   <!-- LINKS -->
-<div class="section" id="xtea-lzo-type-2">
-<h1>~XTEA(-LZO) (Type 2)<a class="headerlink" href="#xtea-lzo-type-2" title="Permalink to this headline">¶</a></h1>
+<section id="xtea-lzo-type-2">
+<h1>~XTEA(-LZO) (Type 2)<a class="headerlink" href="#xtea-lzo-type-2" title="Permalink to this heading">¶</a></h1>
 <p>Security <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-key sd-text-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M6.5 5.5a4 4 0 112.731 3.795.75.75 0 00-.768.18L7.44 10.5H6.25a.75.75 0 00-.75.75v1.19l-.06.06H4.25a.75.75 0 00-.75.75v1.19l-.06.06H1.75a.25.25 0 01-.25-.25v-1.69l5.024-5.023a.75.75 0 00.181-.768A3.995 3.995 0 016.5 5.5zm4-5.5a5.5 5.5 0 00-5.348 6.788L.22 11.72a.75.75 0 00-.22.53v2C0 15.216.784 16 1.75 16h2a.75.75 0 00.53-.22l.5-.5a.75.75 0 00.22-.53V14h.75a.75.75 0 00.53-.22l.5-.5a.75.75 0 00.22-.53V12h.75a.75.75 0 00.53-.22l.932-.932A5.5 5.5 0 1010.5 0zm.5 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
 <span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Weak</span>
 <span class="sd-sphinx-override sd-badge sd-outline-danger sd-text-danger">Not Recommended</span>
@@ -155,10 +159,10 @@ Compression <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd
 RFC Standard <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-comment sd-text-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg>
 <span class="sd-sphinx-override sd-badge sd-outline-secondary sd-text-secondary">Unexistent</span></p>
 <hr class="docutils" />
-<div class="section" id="composition">
-<h2>Composition<a class="headerlink" href="#composition" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+<section id="composition">
+<h2>Composition<a class="headerlink" href="#composition" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
 
 
            </div>
@@ -171,7 +175,7 @@ RFC Standard <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon s
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2019-2022.</p>
+    <p>&#169; Copyright 2019-2023.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
